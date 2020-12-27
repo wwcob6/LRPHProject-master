@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/Gray">
+    <!--app:cardCornerRadius="@dimen/dp_20">-->
+
+    <TextView
+        android:id="@+id/time111"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center"
+        android:text="2019年5月17日  下午14：00"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/title111"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="哈哈哈"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_10"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/image111"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_220"
+            android:layout_below="@+id/title111"
+            android:scaleType="fitXY"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            />
+        <View
+            android:id="@+id/view111"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@+id/image111"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@color/Gray"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/info111"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dp_40"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginStart="@dimen/dp_10"-->
+            <!--android:layout_marginEnd="@dimen/dp_10"-->
+            <!--android:text="查看详情"/>-->
+
+        <RelativeLayout
+            android:id="@+id/rl_message_info111"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:background="@color/white"
+            android:layout_below="@+id/view111"
+            >
+            <TextView
+                android:id="@+id/info111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看详情"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginStart="@dimen/dp_10"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_14"
+                android:src="@drawable/rightarrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dp_5"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

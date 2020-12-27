@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginBottom="3dp"
+    android:background="@drawable/friend_circle_bg"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <LinearLayout
+        android:id="@+id/mainLi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.app.view.CircleImageView
+                android:id="@+id/avator"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/empty_photo" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/avator"
+                android:textColor="#576B95"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_alignBottom="@+id/avator"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/avator"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_nine_grid"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/avator"
+                android:textColor="@color/gary"
+                android:textSize="10sp" />
+
+            <com.app.friendCircleMain.adapter.NineGridTestLayout
+                android:id="@+id/layout_nine_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                app:sapcing="4dp" />
+
+            <Button
+                android:id="@+id/btnIgnore"
+                android:layout_width="22dp"
+                android:layout_height="15dp"
+                android:layout_below="@id/layout_nine_grid"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/micro_comment" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/parise_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/lightgary" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/friend_comment_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/lightgary" />
+    </LinearLayout>
+</LinearLayout>

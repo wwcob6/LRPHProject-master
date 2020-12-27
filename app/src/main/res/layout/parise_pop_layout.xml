@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutIgnore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/micro_list_ignore">
+
+    <LinearLayout
+        android:id="@+id/liearLayoutIgnore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/btnPraise"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/l_xin"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/express1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/d_keai" />
+
+        <ImageView
+            android:id="@+id/express2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/d_xixi" />
+
+        <ImageView
+            android:id="@+id/express3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/d_xiaoku" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnComment"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/liearLayoutIgnore"
+        android:layout_alignLeft="@+id/liearLayoutIgnore"
+        android:layout_alignRight="@+id/liearLayoutIgnore"
+        android:background="@color/micro_list_ignore"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:src="@drawable/micro_comment_comment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="@color/micro_list_ignore"
+            android:text="评论"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

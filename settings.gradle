@@ -1,0 +1,7 @@
+include ':app', ':wheelpicker', ":pn_sdk"
+
+apply from: './base.gradle'
+
+gradle.ext {
+    sdk = sdk
+}

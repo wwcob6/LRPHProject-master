@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/changesetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/devConfig"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:gravity="center"
+        />
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/ip"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/serverip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/edit_Ip"
+            android:inputType="text"
+            android:maxLines="1"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/id"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/devid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/edit_Id"
+            android:inputType="number"
+            android:maxLines="1"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/centerNum"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/centerNum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/edit_centerNum"
+            android:inputType="number"
+            android:maxLines="1"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+</TableLayout>

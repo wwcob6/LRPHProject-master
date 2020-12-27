@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.ui.address.AddressDetailActivity">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_envelopebar" />
+
+    <RelativeLayout
+        android:id="@+id/Rl_address"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_addressSelect"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center_vertical"
+            android:hint="省份、城市、区县"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:background="@color/white">
+
+        <com.app.views.CleanEditText
+            android:id="@+id/et_detailAddress"
+            style="@style/login_edit_style2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:hint="详细地址"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:background="@color/white">
+
+        <com.app.views.CleanEditText
+            android:id="@+id/et_userName"
+            style="@style/login_edit_style2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:hint="姓名"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:background="@color/white">
+
+        <com.app.views.CleanEditText
+            android:id="@+id/et_userPhoneNum"
+            style="@style/login_edit_style2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:hint="手机号码"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp">
+
+        <CheckBox
+            android:id="@+id/box1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:text="设为默认地址"
+            android:textColor="#7F7F7F" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_addressDelete"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="删除收货地址"
+
+            android:textColor="@color/viewfinder_laser" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_addressSave"
+        android:layout_width="350dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_login_selector1"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

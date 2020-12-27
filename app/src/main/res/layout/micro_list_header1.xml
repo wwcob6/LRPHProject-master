@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newbackground1"
+    android:clipToPadding="true"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/newbackground"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/re_background"
+        android:layout_width="fill_parent"
+        android:layout_height="290dp"
+        android:background="@drawable/background1">
+
+        <com.app.view.CircleImageView
+            android:id="@+id/alarm1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/alarm1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_camera"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+
+            android:background="#00000000"
+            android:src="@drawable/ic_publish" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_funcation"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <!--<ImageButton
+            android:id="@+id/application"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_application" />
+
+        <TextView
+            android:id="@+id/old_text"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@id/application"
+            android:layout_alignStart="@id/application"
+            android:layout_below="@id/application"
+            android:gravity="center"
+            android:text="WO家"
+            android:textSize="14sp" />-->
+
+        <ImageButton
+            android:id="@+id/video"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="25dp"
+            android:background="@android:color/transparent"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_video" />
+
+
+        <TextView
+            android:id="@+id/shop_text"
+            android:layout_width="57dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/video"
+            android:layout_below="@+id/video"
+            android:gravity="center"
+            android:text="视频"
+            android:textSize="14sp" />
+
+
+        <ImageButton
+            android:id="@+id/browse"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="25dp"
+
+            android:layout_toEndOf="@id/video"
+            android:background="@android:color/transparent"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_browse" />
+
+        <TextView
+            android:id="@+id/community_text"
+            android:layout_width="57dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/browse"
+            android:layout_below="@+id/browse"
+            android:gravity="center"
+            android:text="浏览"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/chat"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="25dp"
+
+            android:layout_toEndOf="@id/browse"
+            android:background="@android:color/transparent"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_chat" />
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="57dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/chat"
+            android:layout_below="@+id/chat"
+            android:gravity="center"
+            android:text="好友"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="108dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/advertising" />
+
+
+</LinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/fragment_title"/>
+
+        <ListView
+            android:id="@+id/content_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#0000"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:transcriptMode="normal"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#acacac" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#f2f2f2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/input_type"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/circle"
+                    android:src="@drawable/chat_audio" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:background="#fff"
+                        android:selectAllOnFocus="true"/>
+
+                    <com.app.audiorecord.AudioRecorderButton
+                        android:id="@+id/recorder_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/btn_recorder_normal"
+                        android:gravity="center"
+                        android:minHeight="0dp"
+                        android:padding="5dp"
+                        android:text="@string/str_recorder_normal"
+                        android:textColor="#727272"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+                <ImageButton
+                    android:id="@+id/express"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/circle"
+                    android:padding="6dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/chat_smile" />
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp">
+
+                    <Button
+                        android:id="@+id/send"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:background="@color/colorPrimary"
+                        android:text="发送"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/addmore"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chat_more" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#acacac" />
+        <FrameLayout
+            android:id="@+id/expresslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#f2f2f2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/addfolder"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_chat_more_bg"
+                    android:padding="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_folder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/addfolder"
+                    android:layout_alignStart="@id/addfolder"
+                    android:layout_below="@id/addfolder"
+                    android:gravity="center"
+                    android:text="文件" />
+
+                <ImageButton
+                    android:id="@+id/small_video"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/addfolder"
+                    android:background="@drawable/btn_chat_more_bg"
+                    android:padding="17dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_eye" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/small_video"
+                    android:layout_alignStart="@id/small_video"
+                    android:layout_below="@id/small_video"
+                    android:gravity="center"
+                    android:text="小视频" />
+
+                <ImageButton
+                    android:id="@+id/pic"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/small_video"
+                    android:background="@drawable/btn_chat_more_bg"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_pic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/pic"
+                    android:layout_alignStart="@id/pic"
+                    android:layout_below="@id/pic"
+                    android:gravity="center"
+                    android:text="照片" />
+
+                <ImageButton
+                    android:id="@+id/loc"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/pic"
+                    android:background="@drawable/btn_chat_more_bg"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/loc"
+                    android:layout_alignStart="@id/loc"
+                    android:layout_below="@id/loc"
+                    android:gravity="center"
+                    android:text="位置" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

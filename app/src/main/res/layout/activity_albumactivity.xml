@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!--<com.punuo.sys.app.agedcare.ui.TitleLayout2-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+    <!--</com.punuo.sys.app.agedcare.ui.TitleLayout2>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/diseqian"
+        android:id="@+id/rv"
+    />
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/takePhoto"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_margin="60dp"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--android:src="@drawable/em_actionbar_camera_icon"-->
+            <!--app:backgroundTint="@color/titile"-->
+            <!--/>-->
+
+    </FrameLayout>
+</LinearLayout>

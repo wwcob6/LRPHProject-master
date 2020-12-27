@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jtbackground">
+   />
+
+    <RelativeLayout
+        android:id="@+id/rset_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="186px"
+            android:layout_height="140px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/logo2" />
+
+        <TextView
+            android:id="@+id/tv_videostaus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/bt_refuse"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="430dp"
+            android:src="@drawable/ic_hangup" />
+
+        <TextView
+            android:id="@+id/jujue"
+            android:layout_width="130px"
+            android:layout_height="70px"
+            android:layout_alignEnd="@+id/bt_refuse"
+            android:layout_alignStart="@+id/bt_refuse"
+            android:layout_below="@+id/bt_refuse"
+            android:gravity="center"
+            android:text="拒绝"
+            android:textColor="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/bt_accept"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@+id/bt_refuse"
+            android:layout_marginLeft="245dp"
+            android:src="@drawable/jieting" />
+
+        <TextView
+            android:id="@+id/jieting"
+            android:layout_width="130px"
+            android:layout_height="70px"
+            android:layout_alignEnd="@id/bt_accept"
+            android:layout_alignStart="@+id/bt_accept"
+            android:layout_below="@+id/bt_accept"
+            android:gravity="center"
+            android:text="接听"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

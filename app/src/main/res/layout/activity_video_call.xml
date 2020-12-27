@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#000"
+    android:orientation="vertical">
+
+
+
+
+    <SurfaceView
+        android:id="@+id/sv_back"
+        android:layout_gravity="center"
+        android:layout_width="385dp"
+        android:layout_height="315dp" />
+    
+    <SurfaceView
+    android:id="@+id/sv_front"
+    android:layout_width="90dp"
+    android:layout_gravity="right"
+    android:layout_margin="5dp"
+    android:layout_height="160dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="470dp">
+
+        <ImageView
+            android:id="@+id/mute"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/ic_mute" />
+
+        <ImageView
+            android:id="@+id/hangup"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_hangup" />
+
+
+        <ImageView
+            android:id="@+id/HF"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="50dp"
+           android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_hf" />
+    </RelativeLayout>
+
+    <!--    <SurfaceView
+        android:id="@+id/sv_front"
+        android:layout_width="120dp"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:layout_height="180dp" />-->
+    
+</FrameLayout>

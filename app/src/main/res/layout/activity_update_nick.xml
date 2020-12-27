@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newbackground1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/leftarrow" />
+        <!--android:layout_marginTop="17dp"-->
+
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+
+            android:text="修改昵称"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <!--android:layout_marginTop="25dp"-->
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <!--android:layout_marginTop="25dp"-->
+    </RelativeLayout>
+
+    <com.app.views.CleanEditText
+        android:id="@+id/et_nick"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:hint="请输入4-12个字符"
+        android:minEms="4"
+        android:maxEms="12"
+        android:textSize="16sp">
+    </com.app.views.CleanEditText>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:text="好名字可以让你的好朋友更容易记得你"-->
+        <!--android:textColor="#AAAAAA"-->
+        <!--android:textSize="14sp" />-->
+
+</LinearLayout>

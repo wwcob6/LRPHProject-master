@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:background="#f3b337">-->
+    <include
+        android:id="@+id/main2" layout="@layout/fragment_title2" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/picture_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/bt_jingyin"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_guanmai" />
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/bt_jingyin"
+            android:layout_alignEnd="@+id/bt_jingyin"
+            android:layout_below="@+id/bt_jingyin"
+            android:gravity="center"
+            android:text="关麦" />
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_chat1"/>
+
+        <ImageView
+            android:id="@+id/bt_guan"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="290dp"
+            android:src="@drawable/ic_jingyin" />
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/bt_guan"
+            android:layout_alignStart="@+id/bt_guan"
+            android:layout_alignEnd="@+id/bt_guan"
+            android:gravity="center"
+            android:text="静音" />
+    </RelativeLayout>
+
+</LinearLayout>

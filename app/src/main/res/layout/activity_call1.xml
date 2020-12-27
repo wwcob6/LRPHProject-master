@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd64d">
+    />
+
+    <RelativeLayout
+        android:id="@+id/rset_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<com.app.view.CircleImageView-->
+        <!--android:id="@+id/CIV_avatar"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="130dp"-->
+        <!--android:src="@drawable/default_avatar" />-->
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="186px"
+            android:layout_height="140px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/logo2" />
+
+        <TextView
+            android:id="@+id/tv_videostaus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/logo1"
+            android:textColor="#474646"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/iv_hangup"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/ic_hangup"
+            android:layout_marginTop="430dp"
+            android:layout_alignTop="@+id/bt_refuse"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/quxiao"
+            android:layout_width="130px"
+            android:layout_height="70px"
+            android:layout_alignEnd="@id/iv_hangup"
+            android:layout_alignStart="@+id/iv_hangup"
+            android:layout_below="@+id/iv_hangup"
+            android:gravity="center"
+            android:text="取消"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

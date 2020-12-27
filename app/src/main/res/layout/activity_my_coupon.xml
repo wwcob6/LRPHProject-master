@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/newbackground1"
+    tools:context="com.app.ui.MyCouponActivity">
+
+    <include android:id="@+id/main1"
+        layout="@layout/fragment_title2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待使用"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginStart="120dp"/>
+
+        <TextView
+            android:id="@+id/tv_abate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已失效"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="120dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

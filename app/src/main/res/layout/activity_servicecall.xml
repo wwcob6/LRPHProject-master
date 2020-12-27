@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:background="#f3b337">-->
+    <RelativeLayout
+        android:id="@+id/Rl_type"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:layout_height="50dp"
+        android:background="#f3b337"
+        >
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="服务类型"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_call"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_type"
+            android:layout_marginLeft="40dp"
+            android:text="服务电话"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rl_service1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/et_type1"
+            android:layout_width="80dp"
+            android:text="家政"
+            android:textSize="20sp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/et_call1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"/>
+        <Button
+            android:id="@+id/bt_set1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="设置"
+            android:background="#cbc7c4"
+           />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/Rl_service2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/et_type2"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="订餐"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"/>
+
+
+        <EditText
+            android:id="@+id/et_call2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"/>
+        <Button
+            android:id="@+id/bt_set2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="设置"
+            android:background="#cbc7c4"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rl_service3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/et_type3"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="物业"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/et_call3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"/>
+        <Button
+            android:id="@+id/bt_set3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="设置"
+            android:background="#cbc7c4"/>
+
+    </RelativeLayout>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/Rl_service4"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/et_type4"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="wrap_content"-->
+         <!--/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/et_call4"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="120dp"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/bt_set4"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:text="设置"-->
+            <!--android:background="#FFCC00"-->
+            <!--/>-->
+
+    <!--</RelativeLayout>-->
+
+
+
+
+</LinearLayout>

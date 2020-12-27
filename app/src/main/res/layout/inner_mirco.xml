@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@color/title_background"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/ib_notice_del"
+        style="@style/title_imButon"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/layout_marginleft_little"
+        android:background="@drawable/close"
+        android:visibility="gone"/>
+
+    <TextView
+        style="@style/title_imButon"
+        android:layout_marginLeft="10dp"
+        android:text="朋友圈"
+        android:textSize="17sp"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/main_title"
+            style="@style/title_text_new"
+            android:background="@drawable/btn_back1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/layout_text_size_title" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/ib_right"
+        style="@style/title_imButon"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/layout_marginleft"
+        android:background="@drawable/mirco_state" />
+
+</LinearLayout>

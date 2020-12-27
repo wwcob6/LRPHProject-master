@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gray">
+    <!--android:background="#f3b337">-->
+
+    <include
+        android:id="@+id/main1"
+        layout="@layout/fragment_title2" />
+
+    <RelativeLayout
+        android:id="@+id/Rl_service1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/et_type1"
+            android:layout_width="80dp"
+            android:text="家政电话"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center_vertical"
+            android:layout_alignBottom="@+id/bt_set1"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/et_call1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:id="@+id/Rl_service2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/et_type2"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="订餐电话"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:gravity="center_vertical"/>
+
+
+        <EditText
+            android:id="@+id/et_call2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/Rl_service3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/et_type3"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="物业电话"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/et_call3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="120dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/setcall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:background="@drawable/btn_login_selector1"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

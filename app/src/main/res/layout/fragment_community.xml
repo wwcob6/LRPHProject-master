@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/newbackground"
+        android:visibility="gone" />
+    <!-- TODO: Update blank fragment layout -->
+    <!--<WebView-->
+    <!--android:id="@+id/web_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--</WebView>-->
+    <com.maogousoft.ytwebview.YTWebView
+        android:id="@+id/ytWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.maogousoft.ytwebview.YTWebView>
+
+</LinearLayout>

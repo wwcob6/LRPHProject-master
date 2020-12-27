@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<include layout="@layout/fragment_title" />-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/picture_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffa200">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCC00"
+        android:layout_alignBottom="@+id/picture_recycler_view"
+        android:text="按住说话，松开停止"/>
+</RelativeLayout>

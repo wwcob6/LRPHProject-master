@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="activity_horizontal_margin">22.7413dp</dimen>
+	<dimen name="activity_vertical_margin">22.7413dp</dimen>
+	<dimen name="thumbnail_imageview_size">58.2747dp</dimen>
+	<dimen name="bottom_bar_height">106.6000dp</dimen>
+	<dimen name="top_menu_bar_height">63.9600dp</dimen>
+	<dimen name="shutter_bottom_size">88.1227dp</dimen>
+	<dimen name="album_header_bar_height">71.0667dp</dimen>
+	<dimen name="title_view_left_back_padding_left">17.0560dp</dimen>
+	<dimen name="title_view_left_back_padding_right">17.0560dp</dimen>
+	<dimen name="album_header_btn_width">68.2240dp</dimen>
+	<dimen name="album_rooter_bar_height">68.2240dp</dimen>
+	<dimen name="album_rooter_bar_text_size">22.7413sp</dimen>
+	<dimen name="videodetails_textsize_time">18.4773dp</dimen>
+	<dimen name="video_bottom_bar_height">56.8533dp</dimen>
+	<dimen name="standard_padding">11.3707dp</dimen>
+	<dimen name="half_padding">5.6853dp</dimen>
+	<dimen name="height_top_bar">68.2240dp</dimen>
+	<dimen name="padding_search_bar">7.1067dp</dimen>
+	<dimen name="height_row_weixin">83.8587dp</dimen>
+	<dimen name="size_avatar">71.0667dp</dimen>
+	<dimen name="margin_chat_activity">7.1067dp</dimen>
+	<dimen name="field_textsize">19.8987sp</dimen>
+	<dimen name="field_margin_right">7.1067dp</dimen>
+	<dimen name="call_button_padding_vertical">14.2133dp</dimen>
+	<dimen name="call_button_padding_left">35.5333dp</dimen>
+	<dimen name="call_button_padding_right">35.5333dp</dimen>
+	<dimen name="sidebar_text_size">14.2133dp</dimen>
+	<dimen name="image_thumbnail_size">142.1333dp</dimen>
+	<dimen name="image_thumbnail_spacing">1.4213dp</dimen>
+	<dimen name="layout_marginleft_little">19.8987dp</dimen>
+	<dimen name="layout_text_size_title">31.2693sp</dimen>
+	<dimen name="layout_marginleft">35.5333dp</dimen>
+	<dimen name="contact_text_name">22.7413sp</dimen>
+</resources>
